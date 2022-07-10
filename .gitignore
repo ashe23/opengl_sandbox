@@ -1,0 +1,66 @@
+# build folders
+[Bb][Uu][Ii][Ll][Dd]/
+
+# clion
+.idea/
+cmake-build-debug/
+
+# visual studio
+.vs/
+build_msvc/
+
+# Prerequisites
+*.d
+
+# compiled object files
+*.slo
+*.lo
+*.o
+*.ko
+*.elf
+*.obj
+
+# linker output
+*.ilk
+*.map
+*.exp
+
+# precompiled headers
+*.gch
+*.pch
+
+# compiled dynamic libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# compiled static libraries
+*.lai
+*.la
+*.lo
+*.a
+*.lib
+
+# executables
+*.exe
+*.out
+*.app
+
+# debug files
+*.su
+*.idb
+*.pdb
+
+# cmake stuff
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles
+CMakeScripts
+Testing
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
