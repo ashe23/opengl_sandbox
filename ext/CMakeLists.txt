@@ -25,8 +25,10 @@ add_subdirectory(glfw EXCLUDE_FROM_ALL)
 add_subdirectory(glm EXCLUDE_FROM_ALL)
 
 # glad
-add_library(glad INTERFACE)
+add_library(glad STATIC)
 target_sources(glad PUBLIC ${CMAKE_SOURCE_DIR}/ext/glad/include/glad/glad.h PRIVATE ${CMAKE_SOURCE_DIR}/ext/glad/src/glad.c)
+target_include_directories(glad PUBLIC ${CMAKE_SOURCE_DIR}/ext/glad/include)
+set_target_properties(glad PROPERTIES LINKER_LANGUAGE C)
 
 # spdlog
 add_subdirectory(spdlog EXCLUDE_FROM_ALL)
