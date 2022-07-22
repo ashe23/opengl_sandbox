@@ -18,5 +18,15 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # external directory libraries
 add_subdirectory(ext)
 
+SET(COMMON_LIBS glfw glm spdlog glad)
+
+FILE(GLOB ENGINE_HDRS "${CMAKE_SOURCE_DIR}/src/core/*.h")
+FILE(GLOB ENGINE_SRCS "${CMAKE_SOURCE_DIR}/src/core/*.cpp")
+
+add_library(engine_core STATIC)
+target_sources(engine_core PUBLIC ${ENGINE_HDRS} PRIVATE ${ENGINE_SRCS})
+target_link_libraries(engine_core PRIVATE ${COMMON_LIBS})
+target_include_directories(engine_core PUBLIC "${CMAKE_SOURCE_DIR}/src/")
+
 # application directory
 add_subdirectory(app)
