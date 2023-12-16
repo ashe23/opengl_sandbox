@@ -81,6 +81,10 @@
             "xtree": "cpp",
             "xutility": "cpp"
         },
-        "C_Cpp.default.compilerPath": ""
+        "C_Cpp.default.compilerPath": "C:/Program Files/LLVM/bin/clang.exe",
+        "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+        "C_Cpp.default.intelliSenseMode": "windows-clang-x64",
+        "cmake.buildDirectory": "${workspaceFolder}/bin",
+        "cmake.options.statusBarVisibility": "compact"
     }
 }
